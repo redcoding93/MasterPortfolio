@@ -1,4 +1,6 @@
-.buttonDownload {
+				   /* Front Page */
+
+.buttonDownload { 
 	display: inline-block;
 	position: relative;
 	padding: 10px 25px;
@@ -62,7 +64,12 @@
 	-webkit-animation-play-state: running;
 	        animation-play-state: running;
 }
-
+/*.hello {
+	display: grid;
+      grid-template-columns: 100px auto;
+      grid-template-rows: 50px 50px;
+      grid-gap: 3px;
+}*/
 /* keyframes for the download icon anim */
 @-webkit-keyframes downloadArrow {
 	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
@@ -118,6 +125,9 @@ body {
 	background-image: url("../assets/img/gu.jpg");
 	font-family: "Open Sans", "Lato", Sans-serif;
 }
+
+								/* Resume */
+
 /* General Styling */
 .connected_dots h2 {
 max-width: 500px;/*remove if full width*/
@@ -166,6 +176,8 @@ content: "";
 background: #ffffff;
 }
 
+										/* Side Menu */
+
 #headshot {
 	width: 80%;
 	border-radius: 50%;
@@ -198,6 +210,8 @@ background: #ffffff;
 	list-style: none;
 	text-decoration: none;
 }
+
+											/* Resume */
 .timeline {
 	font-size: 16px;
     margin-left: 27%;
@@ -236,6 +250,12 @@ h1 {
 #bio {
 	margin-left: 22%;
 }
+
+											/* Portfolio */
+.portfolio-bio {
+	margin-left: 25%;
+	width: 60;
+}
 #shay {
 	width: 90%;
 }
@@ -253,11 +273,17 @@ h1 {
 }
 .project1, .project3,.project2,.project4, .project5 {
 	display: inline-block;
-	width: 35%;
-	margin-left: 10%;
+	width: 100%;
+	margin-left: 5%;
 }
 .projects {
-	margin-left: 20%;
+	margin-left: 25%;
+	display: grid;
+	/*grid-template-columns: 45% 45%;*/
+	width: 100%;
+	grid-template-rows: repeat(4, 45%);
+	grid-template-columns: repeat(2, 30%);
+	grid-gap: 2%;
 }
 a:hover {
 	color: #BEFFC9;
@@ -272,6 +298,8 @@ a:hover {
     color: black;
     font-size: 20px;
 }*/
+
+									 /* About Me Page */
 .name {
     position: absolute;
     top: 50%;
@@ -280,20 +308,21 @@ a:hover {
     color: black;
     font-size: 15px;
 }
-.bio {
+.about_me {
 	margin-top: -1%;
 	margin-left: 22%;
 	text-align: center;
 	font-size: 22px;
 	font-weight: 600;
-	width: 33%;
+	width: 50%;
+	background-color: white;
 }
-#name {
-	margin-left: 30%;
+#about {
+	margin-left: 35%;
 	margin-top: -10%;
-	font-size: 50px;
+	font-size: 60px;
 	line-height: 53px;
-	font-weight: 400;
+	font-weight: 700;
 	width: 30%;
 	padding-top: 12%;
 }
@@ -314,16 +343,38 @@ a:hover {
 	font-weight: 400;
 	width: 35%;
 }
+									   /* Contact Page */
+
 #contact_title {
-	margin-left: 30%;
+	margin-left: 20%;
 	margin-top: -5%;
-	font-size: 50px;
+	font-size: 150%;
+	font-weight: ;
 	line-height: 53px;
-	font-weight: 400;
-	width: 40%;
+	font-weight: 800;
+	width: 100%;
 	padding-top: 12%;
 }
-/* Form */
+
+											
+.contact {
+	margin-left: 28%;
+	padding-bottom: 10%;
+	font-size: 50px;
+	line-height: 50px;
+	font-weight: 400;
+	padding-top: 12%;
+	width: 58%;
+	background-color: white;
+}
+.contact ul {
+	list-style: none;
+}
+.contact li {
+	margin-bottom: 10%;
+	margin-top: 10%;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 #feedback-page{
@@ -480,7 +531,7 @@ input:focus, textarea:focus {
   background-color:white;
 }
 
-@media only screen and (max-width: 580px) {
+/*@media only screen and (max-width: 580px) {
 	#form-div{
 		left: 3%;
 		margin-right: 3%;
@@ -489,9 +540,18 @@ input:focus, textarea:focus {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
-}
+}*/
 
-/* Media Queries */
+									/* Media Queries */		
+																							
+@media (min-width:360px) { /* small tablet, landscape iPad, lo-res laptops ands desktops */ 
+	.pages {
+		font-size: 300%;
+	}
+	.hello {
+		font-size: 55%;
+	}
+}
 
 @media (min-width:480px) { 
 /* smartphones, Android phones, landscape iPhone */ 
@@ -504,30 +564,29 @@ input:focus, textarea:focus {
 	width: 85%;
 	text-align: left;
  }
+ .projects {
+
+ }
 }
-@media (min-width:360px) { /* small tablet, landscape iPad, lo-res laptops ands desktops */ 
-	.pages {
-		font-size: 300%;
-	}
-	.hello {
-		font-size: 55%;
-	}
-}
+
 @media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
    .side_menu ul {
 	font-size: 50%;
    }
 }
+
 @media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 	.side_menu {
 	font-size: 75%;
    }
 }
+
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
 	#my_name, #name1 {
 		font-size: 450%;
 	}
 }
+
 @media (min-width:1281px) { /* hi-res laptops and desktops */ 
 	.side_menu {
 		font-size: 70%;
