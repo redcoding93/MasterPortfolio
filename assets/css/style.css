@@ -310,7 +310,7 @@ a:hover {
 }
 .about_me {
 	margin-top: -1%;
-	margin-left: 22%;
+	margin-left: 35%;
 	text-align: center;
 	font-size: 22px;
 	font-weight: 600;
@@ -318,8 +318,8 @@ a:hover {
 	background-color: white;
 }
 #about {
-	margin-left: 35%;
-	margin-top: -10%;
+	margin-left: 50%;
+	margin-top: -11%;
 	font-size: 60px;
 	line-height: 53px;
 	font-weight: 700;
